@@ -1,0 +1,84 @@
+<!--1. 表單 <form> -->
+<!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+<!--提供介面，讓使用者輸入表單-->
+<!--交給後端做進一步的處理，然後接收回傳訊息給使用者-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML - Form </title>
+
+    <style>
+        /* 透過改變滑鼠的樣式，告訴使用者目前是否有點選到 cursor */
+    </style>
+</head>
+
+<body>
+
+    <!-- 1-1. 製作一份表單-->
+    <!--   a. 標題：通勤工具使用調查-->
+    <!--   b. 在<body>裡面放入一個表單<form>-->
+    <!--   c. 在表單<form>內加入 姓名 輸入欄位<input type="text">-->
+    <!--   d. 在表單<form>內加入 電話 輸入欄位<input type="text">-->
+    <h2>通勤工具使用調查</h2>
+    <form>
+        <div>
+        <label for="UserName">姓名：</label>
+        <input type="text" name="UserName" id="UserName">
+    </div>
+    <br>
+<div>
+        <label for="UserPhone">電話：</label>
+        <input type="text" name="UserPhone" id="UserPhone">
+    </div>
+    <br>
+    <div>
+        <label for="">職業：</label> 
+        <input type="radio" name="job" id="">
+        <label for="">學生</label>
+        <input type="radio" name="job" id="">
+        <label for="">老師</label>
+    </div>
+    <div>
+        <label for="">年紀：</label>
+        <input type="radio" name="age" id="">
+        <label for="">20~30</label>
+        <input type="radio" name="age" id="">
+        <label for="">30~40</label>
+        <input type="radio" name="age" id="">
+        <label for="">40~50</label>
+        <input type="radio" name="age" id="">
+        <label for="">50以上</label>
+    </div>
+    <div>
+        <label for="">交通工具：</label>
+        <input type="checkbox" name="vec" id="">
+        <label for="">腳踏車</label>
+        <input type="checkbox" name="vec" id="">
+        <label for="">公車</label>
+        <input type="checkbox" name="vec" id="">
+        <label for="">機車</label>
+        <input type="checkbox" name="vec" id="">
+        <label for="">其他</label>
+    </div>
+
+    </form>
+
+
+    <!-- 1-2. 加入 年紀 <input type="radio">-->
+    <!--  id：識別某個HTML文件上的元素-->
+    <!--  class：HTML標籤的分組-->
+    <!--  name：伺服器端根據name取得值；做為radio、checkbox的分組-->
+
+    <!-- 1-3. 加入 職業 <input type="radio"> ，步驟和 1-3 類似-->
+
+    <!-- 1-4. 加入 交通工具 <input type="checkbox"> -->
+
+    <!-- 1-5. 加入 提交  <input type="submit"> -->
+    <!--   a. 比較 <form onsubmit=""> 事件 和 <input type="submit" onclick="" 事件> -->
+    <!--   b. 先確認事件有綁定成功，後面等到javascript章節，我們再回頭撰寫事件和元素取值-->
+
+</body>
+
+</html>
